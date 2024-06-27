@@ -29,10 +29,12 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                    instance    title       tags mask   isfloating   monitor */
-	{ "Firefox-esr",            NULL,       NULL,       0,          0,           -1 },
-	{ "thunderbird-default",    NULL,       NULL,       1 << 2,     0,           -1 },
-	{ "jetbrains-idea-ce",      NULL,       NULL,       1 << 7,     0,           -1 },
+	/* class                    instance    title   tags mask   isfloating  monitor isgame */
+	{ "Firefox-esr",            NULL,       NULL,   0,          0,          -1 },
+	{ "thunderbird-default",    NULL,       NULL,   1 << 2,     0,          -1 },
+	{ "jetbrains-idea-ce",      NULL,       NULL,   1 << 7,     0,          -1 },
+	{ "Steam",                  NULL,       NULL,   0,          0,          -1,     1 },
+	{ "steam_app",              NULL,       NULL,   0,          0,          -1,     1 },
 };
 
 /* layout(s) */
